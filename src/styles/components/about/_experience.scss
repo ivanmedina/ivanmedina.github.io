@@ -1,0 +1,67 @@
+@use "../../abstracts/variables" as *; 
+
+.experience {
+    position: relative !important;
+    padding: 8em 2em !important;
+    min-height: 100vh !important;
+    background: $color-neutral-100 !important;
+  
+    .experience__title {
+      font-size: 2.5em !important;
+      margin-bottom: 2em !important;
+      text-align: center !important;
+      position: relative !important;
+      z-index: 1 !important;
+      color: $color-red-900;
+    }
+  
+    .experience__list {
+      position: relative !important;
+      z-index: 1 !important;
+    }
+  
+    .experience__item {
+      margin-bottom: 2em !important;
+    }
+  
+    .experience__company {
+      font-size: 2em !important;
+      margin-bottom: 0.3em !important;
+      color: $color-red-900 !important;
+    }
+  
+    .experience__company span {
+      font-weight: normal !important;
+    }
+  
+    .experience__description {
+      font-size: 1.4em !important;
+      margin-bottom: 0.5em !important;
+      text-align: justify !important;
+      white-space: pre-line !important; 
+
+      color: $color-neutral-900 !important;
+    }
+  
+    .experience__tools {
+      font-size: 1.2em !important;
+      color: $color-neutral-700 !important;
+    }
+  
+    @media (max-width: 768px) {
+      padding: 4em 1em !important;
+  
+      .experience__title {
+        font-size: 2em !important;
+      }
+  
+      .experience__company {
+        font-size: 1.3em !important;
+      }
+  
+      .experience__description {
+        font-size: 1em !important;
+      }
+    }
+  }
+  

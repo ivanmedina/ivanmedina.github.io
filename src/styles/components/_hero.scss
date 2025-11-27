@@ -1,0 +1,87 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixin" as *;
+
+.hero {
+  min-height: 100vh;
+  place-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: clamp(4rem, 7vw, 6rem) !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    color: $color-neutral-50 !important;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  &__subtitle {
+    font-size: clamp(2rem, 4vw, 2rem) !important;
+    font-weight: 600 !important;
+    margin-top: .75rem !important;
+
+    color: $color-neutral-50 !important;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  &__certs {
+    font-size: clamp(1.5rem, 3vw, 1.5rem) !important;
+    font-weight: 600 !important;
+    margin-top: .75rem !important;
+
+    color: $color-neutral-50 !important;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  &__type {
+    font-size: clamp(2rem, 4vw, 2rem) !important;
+    font-weight: 400 !important;
+    margin-top: .75rem !important;
+
+    color: $color-neutral-50 !important;
+
+    background: rgba(255, 53, 53, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    animation: pulseBlink 1.5s ease-in-out infinite;
+
+  }
+
+  @keyframes pulseBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 2 !important;
+}

@@ -1,0 +1,26 @@
+@use "./abstracts/variables";
+@use "./abstracts/mixin";
+
+@use "./base/global";
+
+@use "./components/hero";
+@use "./components/footer";
+@use "./components/background";
+
+@use "./components/home/services";
+@use "./components/home/presentation-home";
+@use "./components/home/certifications-home";
+
+@use "./components/about/certifications-about";
+@use "./components/about/experience";
+@use "./components/about/presentation-about";
+
+@use "./components/banners/bannerList";
+@use "./components/banners/bannerSocial";
+
+@use "./components/cards/cardServices.scss";
+
+@use "./components/services/services_detail";
+
+@use "./components/services/skills";
+

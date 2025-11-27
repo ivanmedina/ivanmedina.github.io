@@ -1,0 +1,21 @@
+@use "../../abstracts/variables" as *;
+
+
+.services {
+  min-height: 100vh !important;
+  width: 100%;
+  background: $color-neutral-100 !important;
+  // background-image: url("../../../../public/assets/images/triangles.png") !important;
+
+
+}
+
+.services .ui.header.services__title{
+  font-size: 2.5em !important;
+  color: $color-red-900  !important;
+  // text-align: center;
+  // margin: 2em 0 2em !important;
+}
+
+.services__cell{
+}

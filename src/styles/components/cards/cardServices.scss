@@ -1,0 +1,45 @@
+@use "../../abstracts/variables" as *;
+
+.service-card {
+    width: 100% !important;
+    // max-width: 50vh !impo?rtant;
+    padding: 1em !important;
+    // display: flex !important;
+    // flex-direction: column !important;
+    // justify-content: space-between !important;
+    min-height: 100% !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+    transition: box-shadow 0.3s ease !important;
+
+    .icon{
+      color: $color-red-900 !important;
+    }
+  }
+  
+  .service-card__description {
+    font-size: 1em !important;
+    text-align: justify !important;
+    margin-top: 1em !important;
+  }
+  
+  .service-card__list {
+    text-align: left !important;
+    margin-top: 0.8em !important;
+  
+    .item { 
+      
+      line-height: 1.5 !important;
+      color: $color-neutral-900 !important;
+      
+      &::before {
+        color: $color-red-900 !important;
+        font-size: 1.2em;
+      }
+
+    }
+  }
+  
+  .card-hover-effect:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  }

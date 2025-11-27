@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+body {
+  background: $color-neutral-900;
+  color: $color-neutral-300;
+  line-height: 1.6;
+}

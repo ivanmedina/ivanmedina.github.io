@@ -1,0 +1,43 @@
+@use "../../abstracts/variables" as *;
+
+.certs-carousel {
+    min-height: 70vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important; 
+  
+    // background-image:
+      // url("https://www.transparenttextures.com/patterns/triangles.png"),
+      // linear-gradient(to right, $color-neutral-100, $color-neutral-50) !important;
+    background-color: $color-neutral-100 !important;
+    // background-size: auto, cover;
+    // background-position: center, center;
+  
+    &__title {
+      font-size: 4em !important;
+      text-align: center !important;
+      margin-top: 0 !important;
+      color: $color-neutral-900 !important;
+    }
+  
+    &__container {
+      margin-top: 2em;
+      min-height: 1vh;
+    }
+  
+    .certs-carousel__img.ui.image {
+      height: 200px !important;
+      object-fit: contain !important;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .certs-carousel {
+      &__title { font-size: 2.6em !important; }
+      .certs-carousel__img.ui.image { height: 150px !important; }
+    }
+  }

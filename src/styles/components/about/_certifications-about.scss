@@ -1,0 +1,40 @@
+@use "../../abstracts/variables" as *; 
+
+.certificates {
+    padding: 8em !important;
+    background-color: $color-neutral-50 !important;
+    overflow: hidden !important;
+  
+    .certificates__title {
+      font-size: 2.5em !important;
+      text-align: center !important;
+      margin: 0 0 1.5em !important;
+      // position: relative !important;
+      // z-index: 1 !important;
+      color: $color-red-900;
+    }
+  
+    .certificates__grid {
+      position: relative !important;
+      z-index: 1 !important;
+    }
+  
+    .certificates__cell {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+  
+    .certificates__itemLabel {
+      font-size: 1.3em !important;
+      font-weight: 700 !important;
+      color: $color-neutral-900 !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .certificates {
+      padding: 3em !important;
+    }
+  }
+  

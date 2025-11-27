@@ -1,0 +1,60 @@
+@use "../../abstracts/variables" as *;
+
+
+.presentation {
+  
+    min-height: 100vh !important;
+    background: $color-neutral-900 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  
+    &__content {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 60%;
+      padding: 4em 15em 4em 4em;
+
+      &--desktop{
+        // background-color: red !important;
+        z-index: 2  !important;
+        transform: translateX(25%) !important;
+      }
+    }
+    
+    &__title {
+      color: $color-neutral-50 !important;
+    }
+    
+    &__text {
+      color: $color-neutral-100;
+      font-size: 1.3em;
+      line-height: 2em;
+    }
+  
+    &__button {
+      // margin-top: 2em;
+      // align-self: flex-start !;
+      background-color: transparent !important;
+      color: $color-neutral-50 !important;
+      border: 2px solid $color-neutral-50 !important;
+      border-radius: 8px !important;
+      font-weight: bold;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: $color-neutral-50 !important;
+        color: $color-neutral-900 !important;
+      }
+    }
+  
+    // &__image {
+    //   width: 50%;
+    //   height: 100%;
+    //   background-image: 
+    //     linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)),
+    //     url("../../../../public/assets/images/keytape.jpg") !important;
+    //   background-size: cover !important;
+    //   background-position: center;
+    // }
+  }
+  

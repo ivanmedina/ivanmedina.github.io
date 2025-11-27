@@ -1,0 +1,87 @@
+
+@use "../../abstracts/variables" as *; 
+
+.about {
+  background: $color-neutral-900 !important; 
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 100vh;
+
+  &__content {object-fit: cover !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: pre-line !important;
+    height: 100%;
+
+  }
+
+  &__left {
+    color: $color-neutral-50 !important;
+    margin: 0 !important;
+    padding: 6em !important;
+    // z-index: 2  !important;
+    // transform: translateX(25%) !important;
+    
+    &--mobile{
+      padding: 0.5em !important;
+
+    }
+  }
+
+  &__right {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
+
+    img {
+      width: 100% !important;
+      height: 100vh !important;
+      object-fit: cover !important;
+      object-position: center !important;
+    }
+
+  }
+}
+
+.about__title {
+  font-size: 2.5em !important;
+  margin-bottom: 2em !important;
+  margin-bottom: 1em !important;
+  color: $color-red-900 !important;
+  // line-height: 1 !important;
+}
+
+.about__subtitle {
+  // line-height: 1 !important;
+  font-size: 2.5em !important;
+  // margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  color: $color-neutral-50 !important;
+
+  &::before {
+    display: none !important;
+  }
+}
+
+.about__text {
+  font-size: 1.3em !important;
+  line-height: 2em !important;
+}
+
+.about .ui.button.about__cta {
+  margin-top: 2em !important;
+  align-self: flex-start !important;
+  background-color: transparent !important;
+  color: $color-neutral-50 !important;
+  border: 2px solid $color-neutral-50 !important;
+  border-radius: 8px !important;
+  padding: 0.9em 2em !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease !important;
+}
+.about .ui.button.about__cta:hover {
+  background-color: $color-neutral-50 !important;
+  color: $color-neutral-900 !important;
+}
+
+

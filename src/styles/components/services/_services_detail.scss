@@ -1,0 +1,82 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixin" as *;
+
+.services__segment{
+    padding: 2em !important;
+    // background-color: $color-neutral-100 !important;
+
+    &--mobile{
+        padding: 1em !important;
+    }
+
+}
+
+.services__container{
+    border-radius: 10px;
+    // border: 3px solid red !important;
+    padding: 6em !important;
+    // background-color: red !important;
+    
+    &--mobile{
+        padding: 1em !important;
+    }
+}
+
+.services__title{
+    color: $color-neutral-300 !important;
+
+}
+
+.services__headline{
+    color: $color-neutral-100 !important;
+    font-size: 3.2em !important; 
+    font-weight: bold !important;
+    line-height: 1.2 
+}
+
+.services__content{
+    color:$color-neutral-100 !important;
+    font-size: 1.2em !important; 
+
+}
+
+.services__list{
+    color:$color-neutral-900;
+    font-size: 1.2em !important; 
+
+}
+
+.services_list__segment{
+    padding: 1em !important;
+    background-color: $color-neutral-100 !important;
+    margin: 0 !important;
+    border-top: none !important;
+    margin-top: 0 !important;
+    // padding: 0 !important; 
+}
+
+.services__list__content{
+    color:$color-neutral-900;
+    font-size: 1.2em !important; 
+}
+
+.services__list__title{
+    color: $color-neutral-900 !important;
+}
+
+.button.services__cta {
+    margin-top: 2em !important;
+    align-self: flex-start !important;
+    background-color: transparent !important;
+    color: $color-neutral-50 !important;
+    border: 2px solid $color-neutral-50 !important;
+    border-radius: 8px !important;
+    padding: 0.9em 2em !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+}
+
+.button.services__cta:hover {
+    background-color: $color-neutral-50 !important;
+    color: $color-neutral-900 !important;
+  }

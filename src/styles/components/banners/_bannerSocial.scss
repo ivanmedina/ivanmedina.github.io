@@ -1,0 +1,15 @@
+@use "../../abstracts/variables" as *;
+
+.banner-social {  
+    &__icon {
+      // display: flex !important;
+      // align-items: center !important;
+      // justify-content: center !important;
+      color: $color-neutral-50 ;
+  
+      i.icon {
+        cursor: pointer !important;
+      }
+    }
+  }
+  

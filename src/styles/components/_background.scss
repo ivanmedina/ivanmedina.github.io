@@ -4,12 +4,13 @@
     left: 0 !important;
     right: 0 !important;
     bottom: 0 !important;
-    background-color: #e5e5f7 !important;
+    // background-color: #e5e5f7 !important;
     opacity: 0.2 !important;
-    background-image: 
-      linear-gradient(#b3b3b3 4px, transparent 4px),
-      linear-gradient(to right, #b3b3b3 4px, #e5e5f7 4px) !important;
-    background-size: 80px 80px !important;
-    z-index: 0 !important;
+    background-image: url("../../../../public/assets/images/background-skills.svg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+  
+    // z-index: 0 !important;
     
   }

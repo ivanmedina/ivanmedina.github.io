@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import {  Header, Segment } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
 
@@ -10,6 +9,8 @@ import Experience from '../components/about/Experience';
 import Certificates from '../components/about/Certifications';
 import BannerSocial from '../components/banners/BannerSocial';
 import Services from '../components/home/Services';
+
+import selfPhoto from '/assets/images/selfphoto-min.jpg'
 
 const homeProps = {
   homeHeading: {
@@ -157,7 +158,7 @@ export default function Homepage() {
       <Services { ...homeProps.homeServices }/>
 
       <Parallax 
-        imageUrl="assets/images/selfphoto-min.jpg"
+        imageUrl={selfPhoto}
         speed={0.8} 
       />
       <Experience {...aboutProps.aboutExperience}/>

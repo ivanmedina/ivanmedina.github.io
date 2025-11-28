@@ -7,7 +7,6 @@ const Certificates = ({title,certs}) => {
   return (
     <Segment vertical className="certificates">
 
-      <Background />
 
       <Container>
 
@@ -15,7 +14,11 @@ const Certificates = ({title,certs}) => {
         {title}
       </Header>
 
-        <Grid columns={3}  className="certificates__grid">
+        <Grid 
+          doubling
+          columns={3}
+          className="certificates__grid"
+        >
 
           {certs.map((cert, index) => (
 

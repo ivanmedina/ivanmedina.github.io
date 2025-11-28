@@ -16,7 +16,7 @@ export default function ServiceCard({
               <Icon name={icon} size='massive' />
             </Grid.Column>
             <Grid.Column mobile={16} tablet={16} computer={8}   verticalAlign='middle'>
-              <Header as="h3" icon textAlign="center">
+              <Header as="h3" icon textAlign="center" className="service-card-title">
                 {title}
               </Header>
                 {bullets.length > 0 && (

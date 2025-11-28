@@ -24,6 +24,9 @@
   &__inner {
     position: relative;
     z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   &__title {
@@ -31,9 +34,7 @@
     font-weight: 700 !important;
     margin: 0 !important;
     color: $color-neutral-50 !important;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+
   }
 
   &__subtitle {
@@ -43,28 +44,23 @@
 
     color: $color-neutral-50 !important;
 
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+
   }
 
   &__certs {
     font-size: clamp(1.5rem, 3vw, 1.5rem) !important;
     font-weight: 600 !important;
     margin-top: .75rem !important;
-
+    margin-bottom: .75em !important;
     color: $color-neutral-50 !important;
 
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
   }
 
   &__type {
     font-size: clamp(2rem, 4vw, 2rem) !important;
     font-weight: 400 !important;
     margin-top: .75rem !important;
-
+    width: 100%;
     color: $color-neutral-50 !important;
 
     background: rgba(255, 53, 53, 0.3);

@@ -14,7 +14,7 @@ import ServiceList from "./ServicesList";
             Skills
           </Header>
 
-          <ServiceList {...AppSec} style={{backgroundColor:"red"}}/>
+          <ServiceList {...AppSec} />
           <ServiceList {...Pentesting}/>
           <ServiceList {...RedTeam}/>
           <ServiceList {...WebDevelopment}/>

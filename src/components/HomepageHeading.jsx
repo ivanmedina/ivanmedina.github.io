@@ -14,7 +14,6 @@ const HomepageHeading = ({ title, subtitle }) => {
         className="hero__video"
       >
         <source src="/assets/hero.webm" type="video/webm" />
-        {/* <source src="/assets/gifs/movie-hacker.mp4" type="video/mp4" /> */}
       </video>
 
       <Container text className="hero__inner">

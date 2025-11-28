@@ -20,12 +20,12 @@ code {
 }
 
 .card-hover-effect:hover {
-  background-color: #000 !important; /* Fondo negro al hacer hover */
-  color: white;
+  background-color: #000 !important;
+  color: white !important;
   transform: translateY(-5px) !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card-hover-effect:hover * {
-  color: white !important; /* Fuerza el texto blanco dentro */
+  color: white !important;
 }
